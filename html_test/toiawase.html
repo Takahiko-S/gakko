@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<title>お問い合わせ</title>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">NPOサンプル</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="#">トップ</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">施設のご案内</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							コンテンツ </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Something else
+									here</a></li>
+						</ul></li>
+					<li class="nav-item"><a class="nav-link" href="toiawase.html">お問い合わせ</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="row mt-5 mb-5">
+
+			<div class="col-12">
+				<h1 class="text-center">お問い合わせ</h1>
+
+			</div>
+		</div>
+		<div class="row mt-5 mb-5">
+			<div class="col-md-10 mx-auto p-3 bg-light">
+				<script src="https://yubinbango.github.io/yubinbango/yubinbango.js"
+					charset="UTF-8"></script>
+					
+				<form method="post" action="form_send.php" class="row h-adr">
+					<span class="p-country-name" style="display: none;">Japan</span>
+					
+					<div class="col-md-4 mb-3">
+						<label for="u_name" class="form-label">名前</label> <input
+							type="text" class="form-control" id="u_name" name="u_name"
+							required placeholder= "名前を入力">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="u_kana" class="form-label">フリガナ</label> <input
+							type="text" class="form-control" id="u_kana" name="u_kana"
+							required placeholder= "フリガナを入力">
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label for="u_mail" class="form-label">メールアドレス</label> <input
+							type="email" class="form-control" id="u_mail" name="u_mail"
+							required>
+					</div>
+
+<div class="col-md-2 mb-3">
+	<label for="u_name" class="form-label">郵便番号</label> <input
+		type="text" class="form-control p-postal-code" id="u_yubin"
+		name="u_yubin" required placeholder= "950-0000" maxlength= "8">
+</div>
+
+					<div class="col-md-10 mb-3">
+						<label for="u_name" class="form-label">住所</label> <input
+							type="text"
+							class="form-control p-region p-locality p-street-address p-extended-address"
+							id="u_address" name="u_address" required>
+					</div>
+					
+					
+					<div class="col-md-3 mb-3">
+					<p>年齢</p>
+						<select class="form-select" id = "nenrei" name = "nenrei" required>
+							<option  value = "" disabled selected>年齢を選択してください</option>
+							<option value="10">10代</option>
+							<option value="20">20代</option>
+							<option value="30">30代</option>
+							<option value="40">40代</option>
+							<option value="50">50代</option>
+							<option value="60">60代</option>
+							<option value="70">70代以上</option>
+						</select>
+					</div>
+
+					<div class="col-md-3 mb-3">
+						<p>性別</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="seibetsu"
+								id="seibetsu１" value="男性" required> <label
+								class="form-check-label" for="seibetsu1">男性</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="seibetsu"
+								id="seibetsu2" value="女性" required> <label
+								class="form-check-label" for="seibetsu2">女性</label>
+						</div>
+					</div>
+
+					<div class="col-md-6 mb-3">
+						<p>趣味</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="hobby1"
+								name="hobby[]" value="ドライブ"> <label
+								class="form-check-label" for="hobby1">ドライブ</label>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="hobby2"
+								name="hobby[]" value="映画観賞"> <label
+								class="form-check-label" for="hobby2">映画鑑賞</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="hobby3"
+								name="hobby[]" value="音楽観賞"> <label
+								class="form-check-label" for="hobby3">音楽鑑賞</label>
+						</div>
+
+					</div>
+
+
+
+
+
+
+					<div class="mb-3">
+						<label for="message" class="form-label">お問い合わせ内容</label>
+						<textarea class="form-control" id="message" name="message"
+							rows="5" required></textarea>
+					</div>
+
+					<div class="mb-3">
+						<button type="reset" class="btn btn-secondary">キャンセル</button>
+						<button type="submit" class="btn btn-primary">送信</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="containe-fluid m-0 p-0">
+			<div class="row border-top">
+				<div class="col-12">
+					<p class="text-center text-secondary p-3">Copyrigfht &copy;
+						NPO-PC All Right Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

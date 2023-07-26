@@ -1,0 +1,21 @@
+{
+    "ipag": {
+        "normal": "\/home\/webmaster\/public_html\/app_test\/storage\/fonts\/ipag_normal_c0dbe7857de627234dc61da3ff7a239d",
+        "bold": "ipag_bold_c0dbe7857de627234dc61da3ff7a239d"
+    },
+    "1pag": {
+        "bold": "1pag_bold_c0dbe7857de627234dc61da3ff7a239d"
+    },
+    "ipagp": {
+        "normal": "\/home\/webmaster\/public_html\/app_test\/storage\/fonts\/ipagp_normal_a59c9d300b78aa7b1038d326a1cb7928",
+        "bold": "ipagp_bold_a59c9d300b78aa7b1038d326a1cb7928"
+    },
+    "ipam": {
+        "normal": "\/home\/webmaster\/public_html\/app_test\/storage\/fonts\/ipam_normal_1b1124902dc7d37e49303460cf2d23b4",
+        "bold": "ipam_bold_1b1124902dc7d37e49303460cf2d23b4"
+    },
+    "ipamp": {
+        "normal": "\/home\/webmaster\/public_html\/app_test\/storage\/fonts\/ipamp_normal_8f0680d746eb9afe189a8c2ceec5ccb9",
+        "bold": "ipamp_bold_8f0680d746eb9afe189a8c2ceec5ccb9"
+    }
+}
